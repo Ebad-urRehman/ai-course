@@ -247,9 +247,9 @@ This is completely valid in python to include integers strings, and even other d
 
 ```Python
 my_list = ['Ebad-ur-Rehman', 20, 'Computer Science']
-print(my_list[0]) // displays Ebad-ur-Rehman on console
-print(my_list[1]) // displays 20 on console
-print(my_list[2]) // displays Computer Science on console
+print(my_list[0]) # displays Ebad-ur-Rehman on console
+print(my_list[1]) # displays 20 on console
+print(my_list[2]) # displays Computer Science on console
 ```
 
 ### 1.2. Adding new Elements
@@ -258,20 +258,20 @@ print(my_list[2]) // displays Computer Science on console
 
 ```Python
 my_list.append('AI')
-print(my_list) // ['Ebad-ur-Rehman', 20, 'Computer Science' ,'AI']
+print(my_list) #['Ebad-ur-Rehman', 20, 'Computer Science' ,'AI']
 ```
 
 ### **Anywhere**
 
 ```Python
-// inserting at 0 index
+# inserting at 0 index
 my_list = ['Ebad-ur-Rehman', 20, 'Computer Science']
 my_list.insert(0, 'AI')
 my_list = ['AI', 'Ebad-ur-Rehman', 20, 'Computer Science']
 ```
 
 ```Python
-// inserting at 2 index
+# inserting at 2 index
 my_list = ['Ebad-ur-Rehman', 20, 'Computer Science']
 my_list.insert(2, 'AI')
 my_list = ['AI', 'Ebad-ur-Rehman', 'AI', 20, 'Computer Science']
@@ -288,7 +288,7 @@ list1 = ['Ebad-ur-Rehman', 20, 'Computer Science']
 list2 = ['AI', 'Data Structure']
 list1.extend(list2)
 print(list1)
-// ['Ebad-ur-Rehman', 20, 'Computer Science', 'AI', 'Data Structure']
+#['Ebad-ur-Rehman', 20, 'Computer Science', 'AI', 'Data Structure']
 ```
 
 ### **Alternative method**
@@ -297,7 +297,7 @@ print(list1)
 list1 = ['Ebad-ur-Rehman', 20, 'Computer Science']
 list1.extend(['AI', 'Data Structure'])
 print(list1)
-// ['Ebad-ur-Rehman', 20, 'Computer Science', 'AI', 'Data Structure']
+#['Ebad-ur-Rehman', 20, 'Computer Science', 'AI', 'Data Structure']
 ```
 
 ## **1.4. Removing the Element**
@@ -310,7 +310,7 @@ print(list1)
 list1 = ['Ebad-ur-Rehman', 20, 'Computer Science', 20]
 list1.remove(20)
 print(list1)
-// ['Ebad-ur-Rehman', 'Computer Science', 20]
+#['Ebad-ur-Rehman', 'Computer Science', 20]
 ```
 
 ## **1.5. Pop method**
@@ -321,8 +321,8 @@ print(list1)
 list1 = ['Ebad-ur-Rehman', 20, 'Computer Science']
 poped_element = list1.pop(20)
 print(list1)
-// ['Ebad-ur-Rehman', 'Computer Science']
-print(poped_element) // 20
+#['Ebad-ur-Rehman', 'Computer Science']
+print(poped_element) #20
 ```
 
 Without an argument it returns the last element
@@ -331,8 +331,8 @@ Without an argument it returns the last element
 list1 = ['Ebad-ur-Rehman', 20, 'Computer Science']
 poped_element = list1.pop()
 print(list1)
-// ['Ebad-ur-Rehman', 20]
-print(poped_element) // 'Computer Science
+#['Ebad-ur-Rehman', 20]
+print(poped_element) #'Computer Science
 ```
 
 ## **1.6. Index method**
@@ -341,10 +341,10 @@ print(poped_element) // 'Computer Science
 
 ```Python
 list1 = ['Ebad-ur-Rehman', 20, 'Computer Science']
-// element to find index of
+# element to find index of
 element = 20
 index_of_element = list1.index(element)
-print(index_of_element) // 1
+print(index_of_element) #1
 ```
 
 ## **1.7. Count method**
@@ -353,7 +353,7 @@ print(index_of_element) // 1
 
 ```Python
 list1 = [12, 20, 30, 20]
-// no of occurences of 20 is 2
+# no of occurences of 20 is 2
 print(my_list.count())
 ```
 
@@ -364,18 +364,18 @@ print(my_list.count())
 `.sort()` methods convert list into ascending or decsending order.
 
 ```Python
-// ascending order
+# ascending order
 list1 = [12, 20, 30, 20]
 list1.sort()
-print(my_list) // [12, 20, 20, 30]
+print(my_list) #[12, 20, 20, 30]
 
 ```
 
 ```Python
-// decending order
+# decending order
 list1 = [12, 20, 30, 20]
 my_list.sort(reversed=True)
-print(my_list) // [30, 20, 20, 12]
+print(my_list) #[30, 20, 20, 12]
 
 ```
 
@@ -384,10 +384,10 @@ print(my_list) // [30, 20, 20, 12]
 `.reverse()` methods convert list into ascending or decsending order.
 
 ```Python
-// reverse order
+# reverse order
 list1 = [12, 20, 30, 20]
 list1.reverse()
-print(my_list) // [20, 30, 20, 12]
+print(my_list) #[20, 30, 20, 12]
 
 ```
 
@@ -400,9 +400,9 @@ Tuple is a datastructure just like list. but the difference is tuple is immutabl
 Tuple is written just like arrays, but with surrounding round brackets `()`.
 
 ```Python
-// decending order
+# decending order
 tuple1 = (12, 20, 30, 20)
-tuple1.insert(0, 3) // error because tuple doesnt support insert
+tuple1.insert(0, 3) # error because tuple doesnt support insert
 
 ```
 
@@ -429,9 +429,299 @@ Why Tuples are Used:
 ```Python
 my_tuple = (11, 2, 3, 4, 2, 2)
 count_of_2 = my_tuple.count(2)
-print(count_of_2) // 3(2 is present 3 times in this tuple)
+print(count_of_2) #3(2 is present 3 times in this tuple)
 ```
 
 ## 2.4. Index method tuple
 
 `index method works in tuple same as it does in lists` see for details. [List Index method](#index-method)
+
+
+## 3. Sets
+
+Sets is a collection of distinct elements, this means they can't contains any duplicates.
+
+If we want to add any duplicate into it, it just ignores.
+
+### 3.1. Syntax
+
+```Python
+# declaring an empty set to put values later
+empty_set = Set()
+```
+
+### Note : Sets are mutable that means they can change elements in them after declaring them.
+
+### Important : Sets uses hashmaps this means they have best time complexity of O(1), and Worst Complexity of O(n) as hashmaps do.
+
+### Declaring Non Empty Set
+```Python
+my_set = {1, 3, 4 5}
+
+# alternatively
+my_set = Set({1, 3, 4 ,5})
+```
+
+### Set Methods
+## Add Method
+`.add()` method for sets add a new value for the set, but the condition is the value already doesn't exist in the set, If it does then there is also not a problem, it will not add it, and simply ignore it.
+
+```Python
+# adding a non existent value
+my_set = {1, 3, 4, 5}
+my_set.add(7) 
+print(my_set) # {1, 3, 4, 5, 7}
+
+# adding a existent value
+my_set = {1, 3, 4, 5}
+my_set.add(3) 
+print(my_set) # {1, 3, 4, 5}
+```
+
+
+### Update method
+`.update()` method is used to add multiple elements in the set
+
+```Python
+my_set = {1, 3, 4, 5}
+my_set.add([6, 7]) 
+print(my_set) # {1, 3, 4, 5, 6, 7}
+```
+
+### Remove and Discard method
+Both `.remove()` and `.discard()` methods removes the specific element but behaves differently in one case.
+
+`.remove()` method raise a key error when key element is not found in the set.
+
+`.discard()` method don't raise a key error when key element is not found in the set.
+
+
+## Other Important method for sets.
+`Sets` in python have same concept as we have in mathematics, so we also have some methods that are specific for set operations in mathematics.
+
+### Union
+
+```Python
+# union take element form both sets and ignore duplicates(i.e. if an element is found in both set)
+set1 = {1, 4, 3}
+set2 = {4, 5, 6}
+set1.union(set2)
+print(set1) # {1, 4, 3, 5, 6}
+```
+
+
+### Intersection
+
+```Python
+# intersection find common elements
+set1 = {1, 4, 3}
+set2 = {4, 5, 6}
+set1.intersection(set2) 
+print(set1) # {4}
+```
+
+
+### Difference
+
+```Python
+# difference finds the elements that are in 1st set not in 2nd.
+# Here first set is set1 because we call method through it
+set1 = {1, 4, 3}
+set2 = {4, 5, 6}
+set1.difference(set2) # {1, 3}
+```
+
+
+### Symmetric Difference
+
+```Python
+# returns the element that are not common
+set1 = {1, 4, 3}
+set2 = {4, 5, 6}
+set1.symmetric_difference(set2) # {1, 3, 5, 6}
+```
+
+## Funtion that return boolean value
+### Subset
+
+```Python
+set1 = {1, 4, 3}
+set2 = {4, 5, 6}
+set3 = {1, 4}
+
+set1.issubset(set2) # False
+
+set3.issubset(set1) # True
+```
+
+### Superset
+
+```Python
+set1 = {1, 4, 3}
+set2 = {4, 5, 6}
+set3 = {1, 4}
+
+set1.issuperset(set2) # False
+
+set1.issuperset(set3) # True
+```
+
+### Disjoint
+`.isdisjoint()` method returns `True` if there are no common elements in both sets, and false when there is common elements in the set.
+
+```Python
+set1 = {1, 2, 3}
+set2 = {4, 5, 6}
+set3 = {1, 4}
+
+set1.isdisjoint(set2) # False
+
+set2.issdisjoint(set3) # True
+```
+
+
+# 4. Dictionaries
+
+`Dictionaries` are very useful datatype in most of the programming languages.
+
+In `Javascript` It just refers to as object.
+
+In `Python` it is a muteable data structure that has `(key, value)` pairs, the keys are used to access thier corresponding values.
+
+There may be multiple same values, but not mulitple same keys.
+
+Dictionaries also uses hash tables, and consider very efficient data structure as it also has best time complexity of O(1), and worst of O(1) time complexity.
+
+But they might be cosuming more space.
+
+### When to use Set and Dictionary
+If you want better time complexity, and data has no duplicates to store, set might be a good option along with other factors, if we want to use multiple values the dictionary might be a good option.
+
+# Uses of datastructure Optional to understand
+All Data structures have some other interesting uses for solving some problems. For Example, Dictionary can be used to count number of all repeated letters in a string, and set might be use to remove duplicates, You can solve various problems like these on [leetcode.com](https://leetcode.com/)
+
+## Empty Dictionary Declaration
+
+```Python
+my_dict = {}
+print(my_dict) # {}
+```
+
+## Dictionary Initialization
+
+```Python
+my_dict = {
+    'key1': value1,
+    'key2': value2
+}
+print(my_dict) # {}
+```
+
+Values can be variables of any types, but datatype of keys must be either `int` or `string`.
+
+### Example
+
+```Python
+value1 = [1, 2, 3 4]
+value2 = (2, 3, 4, 5)
+value3 = 'string value'
+my_dict = {
+    'key1': value1,
+    'key2': value2
+    'key3', value3
+}
+print(my_dict)
+ '''
+
+result 
+
+{
+    'key1': [1, 2, 3 4],
+    'key2': (2, 3, 4, 5)
+    'key3', 'string value'
+}
+'''
+```
+
+### `Alternatively`
+
+You can assign values directly into the dictionary like that.
+
+```Python
+my_dict = {
+    'key1': [1, 2, 3 4],
+    'key2': (2, 3, 4, 5)
+    'key3', 'string value'
+}
+print(my_dict)
+ '''
+
+result 
+
+{
+    'key1': [1, 2, 3 4],
+    'key2': (2, 3, 4, 5)
+    'key3', 'string value'
+}
+'''
+```
+
+### `Recommended`
+It is recommended to give keys a meaning full name so you can access, and remember them easily.
+
+```Python
+fruit_rates = {
+    'apples': 100,
+    'mangoes': 250,
+    'bananas', 150
+}
+print(my_dict)
+ '''
+
+result 
+
+{
+    'apples': 100,
+    'mangoes': 250,
+    'bananas', 150
+}
+'''
+```
+
+### Usecases of Dictionaries.
+As you can see in above example we have fruits as keys and thier rates as thier corresponding values.
+
+So, How can we access that values, if someone want to find rate of apples, what he will do to get it.
+
+```Python
+# getting fruite rate of apple
+print(fruit_rates['apples'])
+
+# alternatively
+print(fruit_rates.apples)
+```
+
+### Looks Familiar
+In lists we use my_list[`index`] to get the value at that particular index location, but the difference is here indices can be strings, and obviously it is more efficient that the array, as it uses hash maps.
+
+### More Usecases.
+Most important usecase of dictionary is that it can be used to store the table data as dictionary of lists.
+
+If the `table` looks like this
+
+| Fruits | Rates | Quantity | Total Price |
+|----------|----------|----------|-------- |
+| Apples | 100 | 2 | 200 |
+| Mangoes | 200 | 1 | 200 |
+| Bananas | 150 | 3 | 450 |
+
+It's corresponding dictionary used to represent that data.
+
+```Python
+fruit_rates = {
+    'Fruits': ['Rates', 'Quantity', 'Total Price'],
+    'Apples': [100, 2, 200],
+    'Mangoes': [200, 1, 200],
+    'Bananas', [150, 3, 450]
+}
+```
