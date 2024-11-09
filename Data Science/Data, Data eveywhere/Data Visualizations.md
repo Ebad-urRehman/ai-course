@@ -2,7 +2,7 @@ In 1850 ___ analyzes data during a war about deaths of solider and found out tha
 
 Data visualizations saves a lot of time of stack holders to understand the data.
 
-![[Pasted image 20241027163933.png]]
+![Image](Pasted%20image%2020241027163933.png)
 
 
 ![[Pasted image 20241027164246.png]]

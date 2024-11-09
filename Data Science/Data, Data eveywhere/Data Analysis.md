@@ -242,7 +242,7 @@ To name a few others that sound similar but may not be the same role:
 - Operations analyst—analyzes data to assess the performance of business operations and workflows
 
 
-![[Pasted image 20241027201239.png]]
+![](./Pasted%20image%2020241027201239.png)
 
 
 ##### Interview best practices

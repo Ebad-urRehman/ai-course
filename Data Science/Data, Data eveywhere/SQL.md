@@ -12,7 +12,7 @@ MySQL
 Query : A request for data or information from a database. 
 
 ### Structure of Basic query : 
-![[Pasted image 20241027161340.png]]E
+![](Pasted%20image%2020241027161340.png)
 
 Example : 
 SELECT * FROM DATA.column_name
