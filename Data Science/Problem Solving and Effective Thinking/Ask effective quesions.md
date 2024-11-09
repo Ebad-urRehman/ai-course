@@ -1,0 +1,4 @@
+#### Structured Thinking
+The process of recognizing the current problem or situation, organizing available information, revealing gaps and opportunities, and identifying the options.
+
+In this part of the program, you’ll learn how data analysts use structured thinking to solve business problems. Then, you’ll explore how to ask effective questions and use the answers to tell a meaningful story about data. Finally, you’ll discover strategies for effectively communicating and collaborating with your stakeholders when defining a problem and presenting data insights. This will enable you to support and advance business goals with data!
