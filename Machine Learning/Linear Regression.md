@@ -13,25 +13,25 @@ Another type of supervised learning is *Classification*, in which categories are
 - Data used to test model -> test set(represented by y called output/target variable)
 - m = number of training examples
 - Single training examples can be represented as (x,y)
-- (xi, yi) = ith training example (i in superscript)
+- (x<sup>i</sup>, y<sup>i</sup>) = ith training example (i in superscript)
 - Training set going through a learning algorithm generates the function f.
 - Training set generates a  Learning Algorithm that minimizes to generate a  function(f)
 
 This functions looks like this
 f(x) = wx + b
 Or
-f(x) = wb1 +b0
+f(x) = wb<sub>1</sub> +b<sub>0</sub>
 
 Both are Same under different notations.
-Where b0 or w is slope of the line, and b1 or b is y intercept.
+Where b<sub>0</sub> or w is slope of the line, and b<sub>1</sub> or b is y intercept.
 
 This line upon giving the input x predicts the value of y. This means we put value of x in f(x) = wx + b and get the value of y.
 
-This value of y is represented as yhat which means this value is approximated.
+This value of predicted y is represented as y<sup>^</sup> which means this value is approximated.
 
 And it may be equal or less or very different from actual target value.
 
-Yhat approximately equals to y
+y<sup>^</sup> approximately equals to y
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcv8rPGwKrFfwm1V6fZmikfvT4hHR5474ZlTR6YXma68lo9vriiUNM5JP7K2VsY7eVY483Tx62OtpoBzEzr_iEBy2I9JCGvUsWFsGI_a_Zb-bfz-Sr7VPrMW_viBVnfjwoueaUH6M3Q7XZUahoO7exzNpIV?key=UrYzmsmRHfLYmCQJPTAPJA)
 
@@ -42,7 +42,7 @@ Univariate Regression : Regression in which we have only one input and output va
 
 #### Cost Function : tells us how good our model is doing.
 
--> We have to find values of w and b, to find such a line in which in which yhat is closer to y for all (xi, yi)
+-> We have to find values of w and b, to find such a line in which in which y<sup>^</sup> is closer to y for all (x<sup>i</sup>, y<sup>i</sup>)
 
 In order to find such values for w and b for such a line we need a *cost function*.
 
