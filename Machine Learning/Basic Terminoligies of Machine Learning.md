@@ -15,7 +15,11 @@ This Module Covers :
 8. [[#Intermediary to Advance Terminologies]]
 9. [[#Cross Validation]]
 10. [[#Confusion Matrix]]
-11. 
+11. [[#Under fitting and Bias]]
+12. [[#Bias]]
+13. [[#Over fitting and Variance]]
+14. [[#High Variance]]
+15. 
 #### What is machine learning : 
 
 Machine learning gives computer ability to learn without explicitly programmed **Arthur Samuel**
@@ -245,4 +249,51 @@ Example : True(correct predictions) diagonal is one while all others are False P
 | **Actual Class 3** | FP (Class 1) | FP (Class 2) | TP (Class 3) |
 
 
-### BIAS
+### Under fitting and Bias
+
+Under fitting occurs when both training and testing data has likely close score, but very low in both. 
+
+- Occurs when rows are less thousand rows.
+- Data Complex model is simple.
+
+Consider a Simple linear regression problem of predicting prices for the house where the size is known, so we have to train our model on it.
+
+We can clearly see that even if the line seems to be the best fit for that that problem, but on testing data set, it might not perform well because the data points are more like a curve, so a polynomial model may be a best fit for it.
+
+##### Bias
+This condition is also called a bias, because algorithm is too simple, and yet consider itself to be right on training data, whether on testing data it is not.
+In other words it has strong preconception of that housing prices are going to be the linear function with size.
+
+**The term high-bias and under fitting can use interchangeably**
+
+Bias term has multiple meaning in machine learning.
+![](Pasted%20image%2020241120195928.png)
+
+
+### Generalization
+
+When Model pretty perfectly fits the training data, and performs well on test data as well.
+
+![](Pasted%20image%2020241120200541.png)
+
+Different techniques are used for generalization regularization, boosting, and bagging are the few techniques.
+
+### Over fitting and Variance
+
+Performs very well on train, but very bad on test, this occurs due to having very large number of features.
+Model become too complex and try to fit the noise(not important in relevant case) in the data rather than the underlying patterns. 
+
+With large number of features linear models become more powerful.
+
+![](Pasted%20image%2020241120200926.png)
+
+Tries to fit data so much reduces generalization.
+
+#### High Variance
+- Models are too complex, that causes high variance or over fitting.
+
+**The term high-variance and over fitting can use interchangeably**
+
+##### The best one is generalization.
+
+![](Pasted%20image%2020241120201521.png)
